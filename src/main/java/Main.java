@@ -63,28 +63,53 @@ public class Main {
 //        System.out.println("================================");
 
 //        Fibonacci Sequence (user enters length, starts at 0 and 1)
-        int FibLength;
-        Scanner sc = new Scanner(System.in); //create object
+//        int FibLength;
+//        Scanner sc = new Scanner(System.in); //create object
+//
+//        System.out.print("Please enter length: ");
+//        FibLength = sc.nextInt();
+//
+//        int[] num = new int[FibLength];
+//        //initialized first element to 0
+//        num[0] = 0;
+//        //initialized second element to 1
+//        num[1] = 1;
+//
+//        //New number should be the sum of the last two numbers of the series.
+//        for (int i = 2; i < FibLength; i++) {
+//            num[i] = num[i - 1] + num[i - 2];
+//        }
+//
+//        //Print Fibonacci Series
+//        System.out.println("Fibonacci Series: ");
+//        for (int i = 0; i < FibLength; i++) {
+//            System.out.print(num[i] + " ");
+//        }
 
-        System.out.print("Please enter length: ");
-        FibLength = sc.nextInt();
+//        // Accenture: Take in a string input, remove all vowels, and print new string without vowels.
+//
+//        //take in string input and store each character
+//        String modifiedInput = "";
+//        Scanner scan = new Scanner(System.in);
+//        System.out.println("Please input a string.");
+//        String userInput = scan.nextLine();
+//        //loop through each character in input string
+//        for(int i=0; i<userInput.length();i++){
+//            char currentCharacter = userInput.charAt(i);
+//
+//            //check if character is a vowel
+//            if(!isVowel(currentCharacter)){
+//                modifiedInput += currentCharacter;
+//            }
+//        }
+//        System.out.printf("User Input: %s%n", userInput);
+//        System.out.printf("Modified Input: %s%n", modifiedInput);
 
-        int[] num = new int[FibLength];
-        //initialized first element to 0
-        num[0] = 0;
-        //initialized second element to 1
-        num[1] = 1;
-
-        //New number should be the sum of the last two numbers of the series.
-        for (int i = 2; i < FibLength; i++) {
-            num[i] = num[i - 1] + num[i - 2];
-        }
-
-        //Print Fibonacci Series
-        System.out.println("Fibonacci Series: ");
-        for (int i = 0; i < FibLength; i++) {
-            System.out.print(num[i] + " ");
-        }
     }
-
+////    Accenture remove vowels from string question
+//        //have list of vowels to check each character in string
+//    public static boolean isVowel(char character){
+//        character = Character.toLowerCase(character);
+//        return character == 'a' || character == 'e' || character == 'i' || character == 'o' || character == 'u';
+//    }
 }
