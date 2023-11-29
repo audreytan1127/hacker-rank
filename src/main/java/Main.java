@@ -1,3 +1,5 @@
+import ProblemSolving.Conditionals;
+
 import java.util.Scanner;
 
 public class Main {
@@ -22,17 +24,18 @@ public class Main {
 
 //        HackerRank Q6: Scanner with Conditions
 //        Scanner scan = new Scanner(System.in);
-//        int N = scan.nextInt();
-//        if (N%2!=0){
-//            System.out.println("Weird");
-//        } else if (N>=2 && N<=5){
-//            System.out.println("Not Weird");
-//        } else if (N>=6 && N<=20){
-//            System.out.println("Weird");
-//        } else if(N>20){
-//            System.out.println("Not Weird");
-//        }
-//        scan.close();
+        Conditionals hackerRank6 = new Conditionals();
+        int N = hackerRank6.getInt();
+        if (N%2!=0){
+            System.out.println("Weird");
+        } else if (N>=2 && N<=5){
+            System.out.println("Not Weird");
+        } else if (N>=6 && N<=20){
+            System.out.println("Weird");
+        } else if(N>20){
+            System.out.println("Not Weird");
+        }
+
 
 //  // HackerRank Q7: Scanner Input/Output
 //        Scanner scan = new Scanner(System.in);
