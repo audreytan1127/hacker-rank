@@ -1,4 +1,5 @@
 import ProblemSolving.Conditionals;
+import ProblemSolving.StringToInt;
 
 import java.util.Scanner;
 
@@ -23,19 +24,17 @@ public class Main {
 //        System.out.println(c);
 
 //        HackerRank Q6: Scanner with Conditions
-//        Scanner scan = new Scanner(System.in);
-        Conditionals hackerRank6 = new Conditionals();
-        int N = hackerRank6.getInt();
-        if (N%2!=0){
-            System.out.println("Weird");
-        } else if (N>=2 && N<=5){
-            System.out.println("Not Weird");
-        } else if (N>=6 && N<=20){
-            System.out.println("Weird");
-        } else if(N>20){
-            System.out.println("Not Weird");
-        }
-
+//        Conditionals hackerRank6 = new Conditionals();
+//        int N = hackerRank6.getInt();
+//        if (N%2!=0){
+//            System.out.println("Weird");
+//        } else if (N>=2 && N<=5){
+//            System.out.println("Not Weird");
+//        } else if (N>=6 && N<=20){
+//            System.out.println("Weird");
+//        } else if(N>20){
+//            System.out.println("Not Weird");
+//        }
 
 //  // HackerRank Q7: Scanner Input/Output
 //        Scanner scan = new Scanner(System.in);
@@ -49,7 +48,8 @@ public class Main {
 //        System.out.println("Double: " + d);
 //        System.out.println("Int: " + i);
 
-//        //HackerRank Q8: Java Loops
+//        //HackerRank Q8: Java Loops 1
+//        Scanner scan = new Scanner(System.in);
 //        int N = 2;
 //        for (int i=1; i<=10; i++){
 //            System.out.printf("%d x %d = %d %n", N, i, N*i);
@@ -65,7 +65,7 @@ public class Main {
 //        }
 //        System.out.println("================================");
 
-//        Fibonacci Sequence (user enters length, starts at 0 and 1)
+//       //  Fibonacci Sequence (user enters length, starts at 0 and 1)
 //        int FibLength;
 //        Scanner sc = new Scanner(System.in); //create object
 //
@@ -107,12 +107,17 @@ public class Main {
 //        }
 //        System.out.printf("User Input: %s%n", userInput);
 //        System.out.printf("Modified Input: %s%n", modifiedInput);
-
-    }
 ////    Accenture remove vowels from string question
 //        //have list of vowels to check each character in string
 //    public static boolean isVowel(char character){
 //        character = Character.toLowerCase(character);
 //        return character == 'a' || character == 'e' || character == 'i' || character == 'o' || character == 'u';
 //    }
+
+        StringToInt convert = new StringToInt();
+        String s = convert.convertIntToString();
+    }
+
+
+
 }
