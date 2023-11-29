@@ -1,5 +1,6 @@
 import ProblemSolving.Conditionals;
 import ProblemSolving.FibonacciSequence;
+import ProblemSolving.RemoveVowels;
 import ProblemSolving.StringToInt;
 
 import java.util.Scanner;
@@ -73,30 +74,9 @@ public class Main {
 
 
 ////////// Acc. Take in a string input, remove all vowels, and print new string without vowels ///////////
-//
-//        //take in string input and store each character
-//        String modifiedInput = "";
-//        Scanner scan = new Scanner(System.in);
-//        System.out.println("Please input a string.");
-//        String userInput = scan.nextLine();
-//        //loop through each character in input string
-//        for(int i=0; i<userInput.length();i++){
-//            char currentCharacter = userInput.charAt(i);
-//
-//            //check if character is a vowel
-//            if(!isVowel(currentCharacter)){
-//                modifiedInput += currentCharacter;
-//            }
-//        }
-//        System.out.printf("User Input: %s%n", userInput);
-//        System.out.printf("Modified Input: %s%n", modifiedInput);
+        RemoveVowels removingVowelsFromString = new RemoveVowels();
+        removingVowelsFromString.removingVowels();
 
-////    Accenture remove vowels from string question
-//        //have list of vowels to check each character in string
-//    public static boolean isVowel(char character){
-//        character = Character.toLowerCase(character);
-//        return character == 'a' || character == 'e' || character == 'i' || character == 'o' || character == 'u';
-//    }
 //        //HackerRank Q10 convert int to string value
 //        StringToInt convert = new StringToInt();
 //        String s = convert.convertIntToString();
