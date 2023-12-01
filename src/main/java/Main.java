@@ -74,8 +74,8 @@ public class Main {
 
 
 ////////// Acc. Take in a string input, remove all vowels, and print new string without vowels ///////////
-        RemoveVowels removingVowelsFromString = new RemoveVowels();
-        removingVowelsFromString.removingVowels();
+//        RemoveVowels removingVowelsFromString = new RemoveVowels();
+//        removingVowelsFromString.removingVowels();
 
 //        //HackerRank Q10 convert int to string value
 //        StringToInt convert = new StringToInt();
