@@ -1,7 +1,4 @@
-import ProblemSolving.Conditionals;
-import ProblemSolving.FibonacciSequence;
-import ProblemSolving.RemoveVowels;
-import ProblemSolving.StringToInt;
+import ProblemSolving.*;
 
 import java.util.Scanner;
 
@@ -81,9 +78,21 @@ public class Main {
 //        StringToInt convert = new StringToInt();
 //        String s = convert.convertIntToString();
 
+        ///////////// LINKED LISTS: Insert at end /////////////
+        LinkedList newList = new LinkedList();
+        newList = LinkedList.insertAtEnd(newList, 1);
+        newList = LinkedList.insertAtEnd(newList, 2);
+        newList = LinkedList.insertAtEnd(newList, 3);
+        newList = LinkedList.insertAtEnd(newList, 4);
+        LinkedList.printList(newList);
+/////////////////// LINKED LISTS: Delete by key ///////////////////
+        LinkedList.deleteByKey(newList, 1);
+        LinkedList.printList(newList);
+        LinkedList.deleteByKey(newList, 3);
+        LinkedList.printList(newList);
+        LinkedList.deleteByKey(newList, 10);
+        LinkedList.printList(newList);
+
 
     }
-
-
-
 }
