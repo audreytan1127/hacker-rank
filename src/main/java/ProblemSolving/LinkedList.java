@@ -41,7 +41,9 @@ public class LinkedList {
             System.out.println(currentNode.data);
             currentNode = currentNode.next;
         }
+        System.out.println();
     }
+
 public static LinkedList deleteByKey(LinkedList list, int key){
         Node currentNode = list.head, prev = null;
 //        If key to delete is equal to the head of the node list
@@ -71,5 +73,35 @@ public static LinkedList deleteByKey(LinkedList list, int key){
             System.out.println(key + " could not be found");
         }
     return list;
+}
+
+public static LinkedList deleteByIndex(LinkedList list, int index){
+        Node currentNode = list.head, prev = null;
+//        deletes head node
+        if(index == 0 && currentNode != null){
+            list.head = currentNode.next;
+            System.out.println("Number at " + index + " position was deleted");
+            return list;
+        }
+//    deleted node at index that is not the head and less than the list size
+    int counter = 0;
+        while(currentNode != null){
+//            if the counter position is equal to the index, the index will be deleted
+            if(counter == index){
+                prev.next = currentNode.next;
+                System.out.println("Number at " + index + " position was deleted");
+            break;
+            } else {
+// continue looping through list and incrementing counter until index is found
+                prev = currentNode;
+                currentNode = currentNode.next;
+                counter++;
+            }
+        }
+//        If the index is not found in the list, let user know index was not found
+    if(currentNode == null){
+        System.out.println(index + " position was not found");
+    }
+        return list;
 }
 }

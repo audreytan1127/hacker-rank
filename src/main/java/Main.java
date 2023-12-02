@@ -86,12 +86,20 @@ public class Main {
         newList = LinkedList.insertAtEnd(newList, 4);
         LinkedList.printList(newList);
 /////////////////// LINKED LISTS: Delete by key ///////////////////
-        LinkedList.deleteByKey(newList, 1);
-        LinkedList.printList(newList);
-        LinkedList.deleteByKey(newList, 3);
-        LinkedList.printList(newList);
-        LinkedList.deleteByKey(newList, 10);
-        LinkedList.printList(newList);
+//        LinkedList.deleteByKey(newList, 1);
+//        LinkedList.printList(newList);
+//        LinkedList.deleteByKey(newList, 3);
+//        LinkedList.printList(newList);
+//        LinkedList.deleteByKey(newList, 10);
+//        LinkedList.printList(newList);
+
+///////////// LINKED LISTS: Delete by index ///////////////////
+//        LinkedList.deleteByIndex(newList, 0);
+//        LinkedList.printList(newList);
+//        LinkedList.deleteByIndex(newList, 2);
+//        LinkedList.printList(newList);
+//        LinkedList.deleteByIndex(newList, 8);
+//        LinkedList.printList(newList);
 
 
     }
