@@ -1,6 +1,7 @@
 import ProblemSolving.*;
 
 import java.util.Scanner;
+import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) {
@@ -79,12 +80,12 @@ public class Main {
 //        String s = convert.convertIntToString();
 
         ///////////// LINKED LISTS: Insert at end /////////////
-        LinkedList newList = new LinkedList();
-        newList = LinkedList.insertAtEnd(newList, 1);
-        newList = LinkedList.insertAtEnd(newList, 2);
-        newList = LinkedList.insertAtEnd(newList, 3);
-        newList = LinkedList.insertAtEnd(newList, 4);
-        LinkedList.printList(newList);
+//        LinkedList newList = new LinkedList();
+//        newList = LinkedList.insertAtEnd(newList, 1);
+//        newList = LinkedList.insertAtEnd(newList, 2);
+//        newList = LinkedList.insertAtEnd(newList, 3);
+//        newList = LinkedList.insertAtEnd(newList, 4);
+//        LinkedList.printList(newList);
 /////////////////// LINKED LISTS: Delete by key ///////////////////
 //        LinkedList.deleteByKey(newList, 1);
 //        LinkedList.printList(newList);
@@ -101,6 +102,27 @@ public class Main {
 //        LinkedList.deleteByIndex(newList, 8);
 //        LinkedList.printList(newList);
 
+/////////////// STACKS: .push() to add new values to stack ////////////////
+        Stack<Integer> newStack = new Stack<>();
+        newStack.push(50);
+        newStack.push(40);
+        newStack.push(30);
+        newStack.push(20);
+        newStack.push(10);
+        System.out.println(newStack);
+//////////// STACKS: .pop() removes top value of stack //////////////////////
+        Integer removedTopElement = newStack.pop();
+        System.out.println("The value that has been removed: " + removedTopElement);
+        System.out.println("The new stack value after " + newStack);
+//////////// STACKS: .peek() finds just top value of stack ///////////////
+        Integer topElementValue = newStack.peek();
+        System.out.println("The top element value in the stack is: " + topElementValue);
+//////////// STACKS: .isEmpty() returns boolean value when checking whether values present in stack /////////
+        if(!newStack.isEmpty()){
+            System.out.println("The stack is not empty: " + newStack);
+        } else{
+            System.out.println("The stack is empty, use .push() to add values to top of stack");
+        }
 
     }
 }
