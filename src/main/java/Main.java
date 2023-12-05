@@ -127,19 +127,19 @@ public class Main {
 //        }
 
         //////////// QUEUE: instantiate a queue ////////////////////
-        Queue<String> fruit = new ArrayDeque();
-        fruit.add("banana");
-        fruit.add("apple");
-        fruit.add("cherry");
-        fruit.add("kiwi");
-        System.out.println("Queue of fruit: " + fruit);
-
-        String removeFirstFruit = fruit.remove();
-        System.out.println("First fruit to remove: " + removeFirstFruit);
-        System.out.println("Fruit queue after removal: " + fruit);
-
-        String peekFirstFruit = fruit.peek();
-        System.out.println("The first fruit of the queue: " + peekFirstFruit);
-
+//        Queue<String> fruit = new ArrayDeque();
+//        fruit.add("banana");
+//        fruit.add("apple");
+//        fruit.add("cherry");
+//        fruit.add("kiwi");
+//        System.out.println("Queue of fruit: " + fruit);
+//
+//        String removeFirstFruit = fruit.remove();
+//        System.out.println("First fruit to remove: " + removeFirstFruit);
+//        System.out.println("Fruit queue after removal: " + fruit);
+//
+//        String peekFirstFruit = fruit.peek();
+//        System.out.println("The first fruit of the queue: " + peekFirstFruit);
+///////////////////// HEAPS: Max  Heap /////////////////////////////////
     }
 }
