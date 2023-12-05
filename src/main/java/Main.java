@@ -141,25 +141,25 @@ public class Main {
 //        String peekFirstFruit = fruit.peek();
 //        System.out.println("The first fruit of the queue: " + peekFirstFruit);
 ///////////////////// HEAPS: Max  Heap Class /////////////////////////////////
-        MaxHeap heap1 = new MaxHeap(5);
-        heap1.insertKey(20);
-        heap1.insertKey(5);
-        heap1.insertKey(10);
-        heap1.insertKey(8);
-        heap1.insertKey(50);
-
-        System.out.println("Current size of heap: " + heap1.currSize());
-        System.out.println("Max value of heap: " + heap1.getMax());
-
-        int removedMax = heap1.removeMax();
-        System.out.println("This value will be removed from heap: " + removedMax);
-        System.out.println("New size of heap: " + heap1.currSize());
-        System.out.println("New max of heap: " + heap1.getMax());
-
-        int deletedKey = heap1.deleteKey(2);
-        System.out.println("This value will be deleted: " + deletedKey);
-        System.out.println("New size of heap: " + heap1.currSize());
-        System.out.println("New max of heap: " + heap1.getMax());
+//        MaxHeap heap1 = new MaxHeap(5);
+//        heap1.insertKey(20);
+//        heap1.insertKey(5);
+//        heap1.insertKey(10);
+//        heap1.insertKey(8);
+//        heap1.insertKey(50);
+//
+//        System.out.println("Current size of heap: " + heap1.currSize());
+//        System.out.println("Max value of heap: " + heap1.getMax());
+//
+//        int removedMax = heap1.removeMax();
+//        System.out.println("This value will be removed from heap: " + removedMax);
+//        System.out.println("New size of heap: " + heap1.currSize());
+//        System.out.println("New max of heap: " + heap1.getMax());
+//
+//        int deletedKey = heap1.deleteKey(2);
+//        System.out.println("This value will be deleted: " + deletedKey);
+//        System.out.println("New size of heap: " + heap1.currSize());
+//        System.out.println("New max of heap: " + heap1.getMax());
     }
 
 }
