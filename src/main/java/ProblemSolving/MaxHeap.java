@@ -77,21 +77,44 @@ public class MaxHeap {
 //        sets value at index to the new value passed in
         arr[i] = newValue;
 //      ensure max heap properties are still valid after increase
-        while(i != 0 && arr[parent(i)] < arr[i]){
+        while (i != 0 && arr[parent(i)] < arr[i]) {
             int temp = arr[i];
-            arr[i] =  arr[parent(i)];
+            arr[i] = arr[parent(i)];
             arr[parent(i)] = temp;
             i = parent(i);
         }
     }
 
-    public int getMax(){
+    public int getMax() {
         return arr[0];
     }
 
-    public int currSize(){
+    public int currSize() {
         return heapSize;
     }
 
+    //    deletes key at certain index
+    public void deleteKey(int i) {
+//        sets key to infinity and heapifies so infinite value is at root index
+        increaseKey(i, Integer.MAX_VALUE);
+//        removes infinite key and heapifies
+        removeMax();
+    }
 
+    //    inserts a new key
+    public void insertKey(int x) {
+// checks to see if another key can be inserted due to heaps having max size
+        if (heapSize == maxSize) {
+            System.out.println("/n Overflow: key cannot be inserted due to max capacity of heap.");
+            return;
+        }
+//        increment current heap size
+        heapSize++;
+//        sets i to the index of new heap size
+        int i = heapSize - 1;
+//        sets index to key value passed in
+        arr[i]=x;
+//        max heapify
+       maxHeapify(i);
+    }
 }
