@@ -7,7 +7,7 @@ public class MaxHeap {
     int heapSize;
 
     //    instantiates new heap with a maximum size and a current heap size of 0
-    MaxHeap(int maxSize) {
+    public MaxHeap(int maxSize) {
         this.maxSize = maxSize;
         arr = new int[maxSize];
         heapSize = 0;
@@ -67,7 +67,7 @@ public class MaxHeap {
 //        current heap size is decremented
         heapSize--;
 //        makes sure max heap properties are true
-        maxHeapify(0);
+     maxHeapify(0);
         return root;
     }
 
@@ -94,11 +94,12 @@ public class MaxHeap {
     }
 
     //    deletes key at certain index
-    public void deleteKey(int i) {
+    public int deleteKey(int i) {
 //        sets key to infinity and heapifies so infinite value is at root index
         increaseKey(i, Integer.MAX_VALUE);
 //        removes infinite key and heapifies
         removeMax();
+        return i;
     }
 
     //    inserts a new key
@@ -115,6 +116,11 @@ public class MaxHeap {
 //        sets index to key value passed in
         arr[i]=x;
 //        max heapify
-       maxHeapify(i);
+       while(i != 0 && arr[parent(i)] < arr[i]){
+           int temp = arr[i];
+           arr[i] = arr[parent(i)];
+           arr[parent(i)] = temp;
+           i = parent(i);
+       }
     }
 }
