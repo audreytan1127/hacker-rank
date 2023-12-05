@@ -71,5 +71,27 @@ public class MaxHeap {
         return root;
     }
 
+    //    will allow for the value at a certain index to be increased to new value
+//    useful for removing key at certain index
+    public void increaseKey(int i, int newValue) {
+//        sets value at index to the new value passed in
+        arr[i] = newValue;
+//      ensure max heap properties are still valid after increase
+        while(i != 0 && arr[parent(i)] < arr[i]){
+            int temp = arr[i];
+            arr[i] =  arr[parent(i)];
+            arr[parent(i)] = temp;
+            i = parent(i);
+        }
+    }
+
+    public int getMax(){
+        return arr[0];
+    }
+
+    public int currSize(){
+        return heapSize;
+    }
+
 
 }
