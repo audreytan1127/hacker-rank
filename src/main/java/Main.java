@@ -1,5 +1,7 @@
 import ProblemSolving.*;
 
+import java.util.ArrayDeque;
+import java.util.Queue;
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -103,26 +105,41 @@ public class Main {
 //        LinkedList.printList(newList);
 
 /////////////// STACKS: .push() to add new values to stack ////////////////
-        Stack<Integer> newStack = new Stack<>();
-        newStack.push(50);
-        newStack.push(40);
-        newStack.push(30);
-        newStack.push(20);
-        newStack.push(10);
-        System.out.println(newStack);
-//////////// STACKS: .pop() removes top value of stack //////////////////////
-        Integer removedTopElement = newStack.pop();
-        System.out.println("The value that has been removed: " + removedTopElement);
-        System.out.println("The new stack value after " + newStack);
-//////////// STACKS: .peek() finds just top value of stack ///////////////
-        Integer topElementValue = newStack.peek();
-        System.out.println("The top element value in the stack is: " + topElementValue);
-//////////// STACKS: .isEmpty() returns boolean value when checking whether values present in stack /////////
-        if(!newStack.isEmpty()){
-            System.out.println("The stack is not empty: " + newStack);
-        } else{
-            System.out.println("The stack is empty, use .push() to add values to top of stack");
-        }
+//        Stack<Integer> newStack = new Stack<>();
+//        newStack.push(50);
+//        newStack.push(40);
+//        newStack.push(30);
+//        newStack.push(20);
+//        newStack.push(10);
+//        System.out.println(newStack);
+////////////// STACKS: .pop() removes top value of stack //////////////////////
+//        Integer removedTopElement = newStack.pop();
+//        System.out.println("The value that has been removed: " + removedTopElement);
+//        System.out.println("The new stack value after " + newStack);
+////////////// STACKS: .peek() finds just top value of stack ///////////////
+//        Integer topElementValue = newStack.peek();
+//        System.out.println("The top element value in the stack is: " + topElementValue);
+////////////// STACKS: .isEmpty() returns boolean value when checking whether values present in stack /////////
+//        if(!newStack.isEmpty()){
+//            System.out.println("The stack is not empty: " + newStack);
+//        } else{
+//            System.out.println("The stack is empty, use .push() to add values to top of stack");
+//        }
+
+        //////////// QUEUE: instantiate a queue ////////////////////
+        Queue<String> fruit = new ArrayDeque();
+        fruit.add("banana");
+        fruit.add("apple");
+        fruit.add("cherry");
+        fruit.add("kiwi");
+        System.out.println("Queue of fruit: " + fruit);
+
+        String removeFirstFruit = fruit.remove();
+        System.out.println("First fruit to remove: " + removeFirstFruit);
+        System.out.println("Fruit queue after removal: " + fruit);
+
+        String peekFirstFruit = fruit.peek();
+        System.out.println("The first fruit of the queue: " + peekFirstFruit);
 
     }
 }
