@@ -162,22 +162,26 @@ public class Main {
 //        System.out.println("New max of heap: " + heap1.getMax());
 
 //////////// HEAPS: min heap class /////////////////////
-        MinHeap heap2 = new MinHeap(5);
-        heap2.insertKey(10);
-        heap2.insertKey(5);
-        heap2.insertKey(2);
-        heap2.insertKey(8);
-        System.out.println("Current size of heap: " + heap2.currSize());
-        System.out.println("Current minimum value of heap: " + heap2.getMin());
+//        MinHeap heap2 = new MinHeap(5);
+//        heap2.insertKey(10);
+//        heap2.insertKey(5);
+//        heap2.insertKey(2);
+//        heap2.insertKey(8);
+//        System.out.println("Current size of heap: " + heap2.currSize());
+//        System.out.println("Current minimum value of heap: " + heap2.getMin());
+//
+//        System.out.println("Removing minimum value from heap: " + heap2.removeMin());
+//        System.out.println("Current size of heap: " + heap2.currSize());
+//        System.out.println("Current minimum value of heap: " + heap2.getMin());
+//
+//        int removeKey = heap2.deleteKey(1);
+//        System.out.println("Deleting this index from heap: "+ removeKey);
+//        System.out.println("Current size of heap: " + heap2.currSize());
+//        System.out.println("Current minimum value of heap: " + heap2.getMin());
 
-        System.out.println("Removing minimum value from heap: " + heap2.removeMin());
-        System.out.println("Current size of heap: " + heap2.currSize());
-        System.out.println("Current minimum value of heap: " + heap2.getMin());
-
-        int removeKey = heap2.deleteKey(1);
-        System.out.println("Deleting this index from heap: "+ removeKey);
-        System.out.println("Current size of heap: " + heap2.currSize());
-        System.out.println("Current minimum value of heap: " + heap2.getMin());
+//////////////// Phonebook Hackerrank HashMap Q //////////////
+        Phonebook myContacts = new Phonebook();
+        myContacts.contactInfo();
     }
 
 }
