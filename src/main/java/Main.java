@@ -179,9 +179,9 @@ public class Main {
 //        System.out.println("Current size of heap: " + heap2.currSize());
 //        System.out.println("Current minimum value of heap: " + heap2.getMin());
 
-//////////////// Phonebook Hackerrank HashMap Q //////////////
-        Phonebook myContacts = new Phonebook();
-        myContacts.contactInfo();
+//////////////// Phonebook Hackerrank HashMap Q (user input) //////////////
+//        Phonebook myContacts = new Phonebook();
+//        myContacts.contactInfo();
     }
 
 }
